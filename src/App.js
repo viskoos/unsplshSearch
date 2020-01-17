@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import './App.css';
+import Masonry from 'react-masonry-component';
 
 function App() {
 
@@ -38,12 +39,13 @@ function App() {
         />
         <button className="btn" type="submit" onClick={handleClick}>Search</button>
       </div>
-      <div className="uspImages">
-        {result.map((photo) => (
-          <div className="jojo"><img src={photo.urls.small} /></div>
-        ))}
-      </div>
-      
+      <div className="test">
+        <Masonry>
+          {result.map((photo) => (
+            <div className="jojo"><img src={photo.urls.small} /></div>
+          ))}
+        </Masonry>   
+      </div>   
     </div>
   )
 }

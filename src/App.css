@@ -43,46 +43,12 @@ body {
   box-shadow: 0px 0px 17px 0px rgba(50, 50, 50, 0.86);
 }
 
-.uspImages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5px;
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-right: 30px;
-}
-
-.uspImages img {
-  width: 100%;
-  height: 300px;
-  background-size: contain;
-  opacity: 0.7;
-  transition-duration: 1.2s;
-  border-radius: 5px;
-  object-fit: cover;
-}
-
-.uspImages img:hover {
-  height: 75%;
-  opacity: 1;
-  transition-duration: .8s;
-  box-shadow: 0px 0px 17px 0px rgba(50, 50, 50, 0.86);
+.jojo {
+  margin: 5px;
 }
 
 .water {
   position: absolute;
-  top: -15px;
+  top: -15px; 
   opacity: 0.3;
-}
-
-@media (max-width: 600px) {
-  .uspImages {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 420px) {
-  .uspImages {
-    grid-template-columns: 1fr;
-  }
 }
